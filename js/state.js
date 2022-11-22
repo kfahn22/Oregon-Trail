@@ -1,3 +1,54 @@
+const HEALTH = {
+  good: {
+    value: 4,
+    name: 'Good',
+  },
+  adequate: {
+    value: 3,
+    name: 'Adequate',
+  },
+  poor: {
+    value: 2,
+    name: 'Poor',
+  },
+  verypoor: {
+    value: 1,
+    name: 'Very poor',
+  },
+  dead: {
+    value: 0,
+    name: 'Asleep forever', // (dead is not nice)
+  },
+};
+const OCCUPATION = {
+  banker: {
+    wealth: 1600,
+    weight: 1,
+  },
+  carpenter: {
+    wealth: 800,
+    weight: 2,
+  },
+  farmer: {
+    wealth: 400,
+    weight: 3,
+  },
+};
+const PACE = {
+  steady: {
+    value: 15,
+    name: 'Steady'
+  },
+  slow: {
+    value: 7,
+    name: 'Slow'
+  },
+  stopped: {
+    value: 0,
+    name: 'Stopped'
+  },
+};
+
 const state = {
   leader: {
     name: '',
