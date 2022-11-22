@@ -99,3 +99,25 @@ const RATIONS = {
         name: 'Bare Bones',
     },
 };
+const START = {
+    april: {
+        date: '1848-04-01',
+        name: 'April 1, 1848',
+    },
+    may: {
+        date: '1848-05-01',
+        name: 'May 1, 1848',
+    },
+    june: {
+        date: '1848-06-01',
+        name: 'June 1, 1848',
+    },
+    july: {
+        date: '1848-07-01',
+        name: 'July 1, 1848',
+    },
+    august: {
+        date: '1848-08-01',
+        name: 'August 1, 1848',
+    }
+}
