@@ -34,13 +34,22 @@ const OCCUPATION = {
     weight: 3,
   },
 };
+const STORE = {
+  yoke: 20,
+  clothing: 10,
+  food: 10,
+  ammunition: 2,
+  wheels: 10,
+  axle: 10,
+  tongue: 10,
+};
 const PACE = {
   steady: {
-    value: 15,
+    value: 2,
     name: 'Steady'
   },
   slow: {
-    value: 7,
+    value: 1,
     name: 'Slow'
   },
   stopped: {
@@ -119,7 +128,6 @@ const state = {
     ],
     pace: PACE.steady,
   },
-  date: START.date,
   distance: 0, // total distance traveled
   landmark: 0, // distance to next landmark
   score: 0, // score based on education, distance traveled, number of surviving passengers
@@ -167,10 +175,7 @@ class GameStateManager {
   getNextLandmarkDistance() {
     return state.landmark;
   }
-  getDate() {
-    return state.date;
-  }
-  
+
   getInventoryItem(item) {
     return state.inventory[item];
   }
